@@ -1,0 +1,5 @@
+{
+	"AddUDPStringAsObject": "添加 UDP 广播作为对象（仅用于调试）",
+	"brunner-eas3 adapter settings": "brunner-eas3的适配器设置",
+	"portnumber": "EAS3 UDP 数据报的端口号。使用45454-不要改变！"
+}

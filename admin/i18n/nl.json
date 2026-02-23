@@ -1,0 +1,5 @@
+{
+	"AddUDPStringAsObject": "UDP Broadcast toevoegen als object (alleen voor foutopsporing)",
+	"brunner-eas3 adapter settings": "Adapterinstellingen voor brunner-eas3",
+	"portnumber": "Poortnummer EAS3 UDP-datagrammen. Gebruik 45454 - niet wijzigen!"
+}

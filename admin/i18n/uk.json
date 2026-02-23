@@ -1,0 +1,5 @@
+{
+	"AddUDPStringAsObject": "Додати UDP Broadcast як об’єкт (лише для налагодження)",
+	"brunner-eas3 adapter settings": "Налаштування адаптера для brunner-eas3",
+	"portnumber": "Номер порту EAS3 UDP-дейтаграми. Використовуйте 45454 - не змінюйте!"
+}

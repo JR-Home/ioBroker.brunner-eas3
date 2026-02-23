@@ -1,0 +1,114 @@
+{
+	"common": {
+		"name": "brunner-eas3",
+		"version": "0.0.1",
+		"news": {
+			"0.0.1": {
+				"en": "initial release",
+				"de": "Erstveröffentlichung",
+				"ru": "Начальная версия",
+				"pt": "lançamento inicial",
+				"nl": "Eerste uitgave",
+				"fr": "Première version",
+				"it": "Versione iniziale",
+				"es": "Versión inicial",
+				"pl": "Pierwsze wydanie",
+				"uk": "Початкова версія",
+				"zh-cn": "首次出版"
+			}
+		},
+		"titleLang": {
+			"en": "Brunner EAS3",
+			"de": "Brunner EAS3",
+			"ru": "Бруннер EAS3",
+			"pt": "Brunner EAS3",
+			"nl": "Brunner EAS3",
+			"fr": "Brunner EAS3",
+			"it": "Brunner EAS3",
+			"es": "Brunner EAS3",
+			"pl": "Brunnera EAS3",
+			"uk": "Brunner EAS3",
+			"zh-cn": "布伦纳 EAS3"
+		},
+		"desc": {
+			"en": "Adapter for reading data from Brunner combustion control system EAS3",
+			"de": "Adapter zum Auslesen der Daten des Brunner-Verbrennungsregelsystems EAS3",
+			"ru": "Адаптер для чтения данных из системы управления горением Brunner EAS3",
+			"pt": "Adaptador para leitura de dados do sistema de controle de combustão Brunner EAS3",
+			"nl": "Adapter voor het uitlezen van gegevens van het Brunner verbrandingscontrolesysteem EAS3",
+			"fr": "Adaptateur pour lire les données du système de contrôle de combustion Brunner EAS3",
+			"it": "Adattatore per la lettura dei dati dal sistema di controllo della combustione Brunner EAS3",
+			"es": "Adaptador para leer datos del sistema de control de combustión Brunner EAS3",
+			"pl": "Adapter do odczytu danych z systemu kontroli spalania Brunner EAS3",
+			"uk": "Адаптер для зчитування даних із системи контролю горіння Brunner EAS3",
+			"zh-cn": "用于从 Brunner 燃烧控制系统 EAS3 读取数据的适配器"
+		},
+		"authors": [
+			"JR-Home"
+		],
+		"keywords": [
+			"Brunner",
+			"EAS3",
+			"combustion",
+			"wood",
+			"burner"
+		],
+		"licenseInformation": {
+			"type": "free",
+			"license": "MIT"
+		},
+		"platform": "Javascript/Node.js",
+		"icon": "brunner-eas3.png",
+		"enabled": true,
+		"extIcon": "https://raw.githubusercontent.com/JR-Home/ioBroker.brunner-eas3/main/admin/brunner-eas3.png",
+		"readme": "https://github.com/JR-Home/ioBroker.brunner-eas3/blob/main/README.md",
+		"loglevel": "info",
+		"tier": 3,
+		"mode": "daemon",
+		"type": "iot-systems",
+		"compact": true,
+		"connectionType": "local",
+		"dataSource": "push",
+		"adminUI": {
+			"config": "json"
+		},
+		"dependencies": [
+			{
+				"js-controller": ">=6.0.11"
+			}
+		],
+		"globalDependencies": [
+			{
+				"admin": ">=7.0.23"
+			}
+		]
+	},
+	"native": {
+		"AddUDPString": false,
+		"EASPortNumber": 45454
+	},
+	"objects": [],
+	"instanceObjects": [
+		{
+			"_id": "info",
+			"type": "channel",
+			"common": {
+				"name": "Information"
+			},
+			"native": {}
+		},
+		{
+			"_id": "info.connection",
+			"type": "state",
+			"common": {
+				"role": "indicator.connected",
+				"name": "Device or service connected",
+				"type": "boolean",
+				"read": true,
+				"write": false,
+				"def": false
+			},
+			"native": {}
+		}
+	]
+}

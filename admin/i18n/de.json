@@ -1,0 +1,5 @@
+{
+	"AddUDPStringAsObject": "UDP Broadcast als Objekt hinzufügen (nur zum Debuggen)",
+	"brunner-eas3 adapter settings": "Adaptereinstellungen für brunner-eas3",
+	"portnumber": "Portnummer EAS3 UDP-Datagramme. Verwenden Sie 45454 – nicht ändern!"
+}

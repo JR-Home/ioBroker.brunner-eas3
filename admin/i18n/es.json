@@ -1,0 +1,5 @@
+{
+	"AddUDPStringAsObject": "Agregar transmisión UDP como objeto (solo para depuración)",
+	"brunner-eas3 adapter settings": "Ajustes del adaptador para brunner-eas3",
+	"portnumber": "Número de puerto Datagramas EAS3 UDP. Utilice 45454-¡no cambie!"
+}
