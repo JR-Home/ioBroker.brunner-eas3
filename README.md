@@ -1,13 +1,22 @@
 ![Logo](admin/brunner-eas3.png)
 # ioBroker.brunner-eas3
 
+[![NPM version](https://img.shields.io/npm/v/iobroker.brunner-eas3.svg)](https://www.npmjs.com/package/iobroker.brunner-eas3)
+[![Downloads](https://img.shields.io/npm/dm/iobroker.brunner-eas3.svg)](https://www.npmjs.com/package/iobroker.brunner-eas3)
+![Number of Installations](https://iobroker.live/badges/brunner-eas3-installed.svg)
+![Current version in stable repository](https://iobroker.live/badges/brunner-eas3-stable.svg)
+
+[![NPM](https://nodei.co/npm/iobroker.brunner-eas3.png?downloads=true)](https://nodei.co/npm/iobroker.brunner-eas3/)
+
+**Tests:** ![Test and Release](https://github.com/JR-Home/ioBroker.brunner-eas3/workflows/Test%20and%20Release/badge.svg)
+
 ## brunner-eas3 adapter for ioBroker
 
 Adapter for reading data from Brunner combustion control system EAS 3. The data is published via WLAN broadcast messages.
 
 If the connection to EAS 3 is lost, the combustion temperature is set to -99.
 
-Burning status:
+Burning states:
 -1 - status not available, connection lost
  0 - door open
  1 - fire start
