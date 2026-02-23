@@ -40,6 +40,9 @@ This adapter is NOT an official product from Urlich Brunner GmbH. It was develop
 ### **WORK IN PROGRESS**
 * (JR-Home) initial release
 
+### 0.0.1 (2026-02-23)
+* (JR-HOME) Initial test version
+
 ## License
 MIT License
 

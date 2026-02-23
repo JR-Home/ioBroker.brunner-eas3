@@ -14,7 +14,8 @@
     "EAS 3",
     "combustion",
     "wood",
-    "burner"
+    "burner",
+    "ioBroker"
   ],
   "repository": {
     "type": "git",
