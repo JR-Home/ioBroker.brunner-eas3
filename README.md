@@ -3,12 +3,23 @@
 
 ## brunner-eas3 adapter for ioBroker
 
-Adapter for reading data from Brunner combustion control system EAS3. The data is published via WLAN broadcast messages.
+Adapter for reading data from Brunner combustion control system EAS 3. The data is published via WLAN broadcast messages.
+
+If the connection to EAS 3 is lost, the combustion temperature is set to -99.
+
+Burning status:
+-1 - status not available, connection lost
+ 0 - door open
+ 1 - fire start
+ 2 - fire step 2
+ 5 - end of fire
+ 6 - Error/Timeout, fire start not detected
+ 7 - fire done. 
 
 
 ### DISCLAIMER
 
-This adapter is NOT an official product from Brunner. It was developed and maintained by members of the open source community.
+This adapter is NOT an official product from Urlich Brunner GmbH. It was developed and maintained by members of the open source community.
 
 
 ## Changelog
