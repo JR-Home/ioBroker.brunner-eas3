@@ -212,17 +212,17 @@ class BrunnerEas3 extends utils.Adapter {
 			type: "state",
 			common: {
 				name: {
-					en: "throttle valve\n",
-					de: "Drosselklappe\n",
-					ru: "дроссельная заслонка\n",
-					pt: "válvula de aceleração\n",
-					nl: "gasklep\n",
-					fr: "soupape d'accélérateur\n",
-					it: "valvola a farfalla\n",
-					es: "válvula de mariposa\n",
-					pl: "zawór przepustnicy\n",
-					uk: "дросельний клапан\n",
-					"zh-cn": "节气门\n"
+					en: "throttle valve",
+					de: "Drosselklappe",
+					ru: "дроссельная заслонка",
+					pt: "válvula de aceleração",
+					nl: "gasklep",
+					fr: "soupape d'accélérateur",
+					it: "valvola a farfalla",
+					es: "válvula de mariposa",
+					pl: "zawór przepustnicy",
+					uk: "дросельний клапан",
+					"zh-cn": "节气门",
 				},
 				type: "number",
 				role: "indicator",
@@ -247,7 +247,7 @@ class BrunnerEas3 extends utils.Adapter {
 					es: "Añade más madera",
 					pl: "Dodaj więcej drewna",
 					uk: "Додайте більше деревини",
-					"zh-cn": "添加更多木材"
+					"zh-cn": "添加更多木材",
 				},
 				type: "number",
 				role: "indicator",
@@ -272,7 +272,7 @@ class BrunnerEas3 extends utils.Adapter {
 					es: "Zumbador",
 					pl: "Brzęczyk",
 					uk: "Зумер",
-					"zh-cn": "蜂鸣器"
+					"zh-cn": "蜂鸣器",
 				},
 				type: "number",
 				role: "indicator",
@@ -297,7 +297,7 @@ class BrunnerEas3 extends utils.Adapter {
 					es: "Versión de firmware",
 					pl: "Wersja oprogramowania sprzętowego",
 					uk: "Версія прошивки",
-					"zh-cn": "固件版本"
+					"zh-cn": "固件版本",
 				},
 				type: "number",
 				role: "indicator",
@@ -308,20 +308,17 @@ class BrunnerEas3 extends utils.Adapter {
 			native: {},
 		});
 
-
-
 		// Bis zur ersten Nachricht ist die Temperatur -99 und Status -1!
 		await this.setState(cBrunnerEAS3HeizraumTemperatur, -99, true);
 		await this.setState(cBrunnerEAS3AbbrandStatus, -1, true);
 
 		// Create udp server socket object.
 		this.server = dgram.createSocket("udp4");
-		// Error Handling
+
 		this.server.on("error", err => {
-			this.log.error(`UDP Fehler:\n${err.stack}`);
-			return;
+			this.log.error(`Server / socket error: ${err.stack}`);
 		});
-		// Port Nummer der Brunner EAS3 Abbrandt Steuerung
+
 		this.server.bind(this.config.EASPortNumber);
 
 		// When udp server started and listening.
@@ -330,11 +327,12 @@ class BrunnerEas3 extends utils.Adapter {
 			var address = this.server?.address();
 			this.log.debug(`UDP Server started and listening on ${address?.address}:${address?.port}`);
 		});
+
 		this.log.debug(`Bind UDP successfully done`);
 
 		// Mit der FW-Version 3.25 ist ein weiterer Parameter hinzugekommen. Bedeutung noch unklar. RegExpr. musste daher angepasst werden
 		var re =
-			/<bdle eas.+stat="(\d+)">(\d+);(\d+);(\d+);(\d+);(\d+);(\d+);(\d+);(\d+);(\d+);(\-?\d+);(\d+);(\d+);(\d+);?(\d*).+;<\/bdle>/;
+			/<bdle eas.+stat="(\d+)">(\d+);(\d+);(\d+);(\d+);(\d+);(\d+);(\d+);(\d+);(\d+);(-?\d+);(\d+);(\d+);(\d+);?(\d*).+;<\/bdle>/;
 
 		this.server.on("message", async message => {
 			// Create output message.
@@ -434,6 +432,7 @@ class BrunnerEas3 extends utils.Adapter {
 			if (this.server) {
 				this.server.close();
 				this.log.info("UDP port closed.");
+				this.server = null;
 			}
 			// clean up connection timer
 			if (this.timerConnectionId) {
@@ -504,7 +503,6 @@ class BrunnerEas3 extends utils.Adapter {
 	// 		}
 	// 	}
 	// }
-
 }
 
 if (require.main !== module) {
