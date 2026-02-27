@@ -358,10 +358,10 @@ class BrunnerEas3 extends utils.Adapter {
 					}
 				}
 				await this.setStateChangedAsync(cBrunnerEAS3AbbrandStatus, iAbbrandStatus, true);
-				await this.setStateChangedAsync(cBrunnerEAS3Drosselklappe, parseInt(resultArray[4]));
-				await this.setStateChangedAsync(cBrunnerEAS3Summer, parseInt(resultArray[6]));
-				await this.setStateChangedAsync(cBrunnerEAS3HolzNachlegen, parseInt(resultArray[7]));
-				await this.setStateChangedAsync(cBrunnerEAS3FirmwareVersion, parseInt(resultArray[9]));
+				await this.setStateChangedAsync(cBrunnerEAS3Drosselklappe, parseInt(resultArray[4]), true);
+				await this.setStateChangedAsync(cBrunnerEAS3Summer, parseInt(resultArray[6]), true);
+				await this.setStateChangedAsync(cBrunnerEAS3HolzNachlegen, parseInt(resultArray[7]), true);
+				await this.setStateChangedAsync(cBrunnerEAS3FirmwareVersion, parseInt(resultArray[9]), true);
 				if (this.config.AddUDPString == true) {
 					await this.setStateChangedAsync(cBrunnerEAS3Broadcast, sMessage, true);
 				}
