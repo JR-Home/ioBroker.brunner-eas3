@@ -32,10 +32,12 @@ This adapter is NOT an official product from Urlich Brunner GmbH. It was develop
 
 
 ## Changelog
-### **WORK IN PROGRESS**
+<!--
+	Placeholder for the next version (at the beginning of the line):
+	### **WORK IN PROGRESS**
+-->
 
-### 0.0.3 (2026-02-27)
-* (JR-Home) first offical release
+### **WORK IN PROGRESS**
 
 ### 0.0.2 (2026-02-25)
 * (JR-Home) beta version
