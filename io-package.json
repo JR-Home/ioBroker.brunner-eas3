@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "brunner-eas3",
-    "version": "0.0.2",
+    "version": "1.0.0",
     "news": {
+      "1.0.0": {
+        "en": "first initial release",
+        "de": "erste erstauslösung",
+        "ru": "первый первоначальный выпуск",
+        "pt": "primeira versão inicial",
+        "nl": "eerste eerste release",
+        "fr": "première libération initiale",
+        "it": "primo rilascio iniziale",
+        "es": "primer lanzamiento inicial",
+        "pl": "pierwsze wydanie początkowe",
+        "uk": "перший початковий реліз",
+        "zh-cn": "首次发布"
+      },
       "0.0.2": {
         "en": "initial release",
         "de": "erstausstrahlung",
