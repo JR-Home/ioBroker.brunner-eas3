@@ -4,7 +4,7 @@
   "description": "Adapter for reading data from Brunner combustion control system EAS3",
   "author": {
     "name": "JR-Home",
-    "email": ""
+    "email": "JR-HomeIOB@web.de"
   },
   "contributors": [],
   "homepage": "https://github.com/JR-Home/ioBroker.brunner-eas3",

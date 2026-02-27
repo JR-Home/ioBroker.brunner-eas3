@@ -36,6 +36,9 @@ This adapter is NOT an official product from Urlich Brunner GmbH. It was develop
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (JR-Home) release published on NPM
+
 ### 1.0.0 (2026-02-27)
 * (JR-Home) first initial release
 
@@ -48,7 +51,7 @@ This adapter is NOT an official product from Urlich Brunner GmbH. It was develop
 ## License
 MIT License
 
-Copyright (c) 2026 JR-Home 
+Copyright (c) 2026 JR-Home JR-HomeIOB@web.de
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
