@@ -39,6 +39,9 @@ This adapter is NOT an official product from Urlich Brunner GmbH. It was develop
 
 ### **WORK IN PROGRESS**
 
+### 1.0.0 (2026-02-27)
+* (JR-Home) first initial release
+
 ### 0.0.2 (2026-02-25)
 * (JR-Home) beta version
 
